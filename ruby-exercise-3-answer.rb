@@ -27,7 +27,7 @@ snowy_words = to_words snowy
 puts "Here are the lines of Snowy that start with a vowel"
 
 snowy_lines.each do |line|
-  puts line if starts_with_vowel line
+  puts line if starts_with_vowel(line)
 end
 
 puts

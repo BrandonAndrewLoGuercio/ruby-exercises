@@ -38,12 +38,28 @@ def find book
 end
 
 def add_book author, title
-#TODO
+  books = @favorite_books[author]
+  if books
+    books << title
+  else
+    puts "No such author"
+  end
 end
 
 def delete_book author, title
-#TODO
+  books = @favorite_books[author]
+  if books
+    books.delete title
+  else
+    "No such author"
+  end
 end
+
+def add_author_book author, title
+  author_books = @favorite_books[author]
+  if !books
+    @favorite_books [:author] = "Brandon"
+    
 
 def handle_command command, arg
   if command == 'get'
