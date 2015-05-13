@@ -38,7 +38,7 @@ snowy_lines.each do |line|
   puts line if has_odd_number_words line
 end
 
-puts
+
 puts "Here are all the rhyming pairs from the ends of the Snowy lines"
 i = 0
 while i < snowy_lines.count
